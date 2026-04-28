@@ -1,0 +1,1 @@
+create machine agent as as service configuration in all appdynamics services

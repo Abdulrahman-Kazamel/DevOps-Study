@@ -1,0 +1,1 @@
+Get the size of a file, run ``du -sh filename``

@@ -1,0 +1,74 @@
+meta:
+  version: 3.0.2
+  create-date: 2023-12-26T12:33:39Z
+license:
+  id: 166852086557LPI
+  expiration-date: 2024-11-27T00:00:00Z
+  customer:
+    id: cust
+    name: Advanced Computer Technology (ACT)
+    email: osama.nabil@act.eg
+  type: ONPREM-CONTROLLER
+  hardware-fingerprint: 00:50:56:95:b9:8c
+  environment: PROD
+  packages:
+  - package: ENTERPRISE
+    create-date: 2022-11-15T00:00:00Z
+    start-date: 2022-11-15T00:00:00Z
+    expiration-date: 2024-11-27T00:00:00Z
+    type: PAID
+    license-units: 60
+    properties:
+      dataRetentionDays: 8
+  - package: RUM_PEAK
+    create-date: 2022-11-15T00:00:00Z
+    start-date: 2022-11-15T00:00:00Z
+    expiration-date: 2024-11-27T00:00:00Z
+    type: PAID
+    license-units: 10
+    properties:
+      dataRetentionDays: 8
+      eum-license-type: EUM_PRO
+      eum-unified-license-allows-overages: "false"
+      eum-unified-license-max-units: 10
+      mobile-license-type: MOBILE_PRO
+  - package: SYNTHETIC_PRIVATE_PRO_UNLIMITED
+    create-date: 2022-11-15T00:00:00Z
+    start-date: 2022-11-15T00:00:00Z
+    expiration-date: 2024-11-27T00:00:00Z
+    type: TRIAL
+    license-units: 1
+    properties: {}
+  - package: SYNTHETIC_HOSTED_PRO
+    create-date: 2022-11-15T00:00:00Z
+    start-date: 2022-11-15T00:00:00Z
+    expiration-date: 2024-11-27T00:00:00Z
+    type: PAID
+    license-units: 5
+    properties: {}
+  - package: PREMIUM
+    create-date: 2022-11-15T00:00:00Z
+    start-date: 2022-11-15T00:00:00Z
+    expiration-date: 2024-11-27T00:00:00Z
+    type: PAID
+    license-units: 120
+    properties: {}
+  - package: LOG_ANALYTICS_PRO
+    create-date: 2022-11-15T00:00:00Z
+    start-date: 2022-11-15T00:00:00Z
+    expiration-date: 2024-11-27T00:00:00Z
+    type: PAID
+    license-units: 5
+    properties:
+      dataRetentionDays: 8
+  license-unit-ratios: []
+  properties:
+    eum-account-name: AdvancedComputerTechnologyACTa0Q2H00000K96fYUAR
+    eum-deployment: onprem
+    eum-license-key: f8a336d9-ff78-4aae-b8a1-fdc7ad5367d0
+---
+encryption:
+  algorithm: None
+signature:
+  algorithm: SHA256withRSA
+  value: c9b188c744b2468f681261e4a9facdd3aaee50800c980b863d576d27c654f513ba867f8471345be2e4c1eaae6181697baba44d3e2a9177c4d193d1ad4d5af4b9b68e18937fbaecc2dc54b64214e632f167a676b4da49d9bf867782a25ae04547575dfcf018b9766992f2dbcff0c566db6eea86e3bd259cd9c63b2b54872bb02454a2a3eb0426c74765fa56c05f003afef4a03753e5dfac80988212a467d101acf235611553f2acff600e1b6b5cdc65c6562e21422cc8a7f1da5554d35078052af55c2446fee07c6472959f2574cc2dff06f9d8e854a85616564e9420600cde89056a99dd5453a33288befbf73fdad50ee7507ca73a4c7ea88dd86d9b696b215c532f23ece01663e5b68dea06cd4718d7f0455b2ebd12924fb54daac4a697b2cc05c19159febda0766d8306cc5bd115ddbe83d7b31640e7816933d6e854da869fb3bafaebc21c68900de4900151a8595d09c4e911d10a3930258c39f348efe8d3d6fcbaab30c5ca30272c92fb9080606f14b38408f5f2be9dc7114c4ea5e9f118ac59230e9c07df809cd9f9cd52b7f27061fe2a753d209fd8d488d8af606652e3951c40b564e1a038a5a5a6bdc3f64e54ba91210b6065fb558a7045a2815a8607f0fe78ddf0fc6e6f230e35149ece50cf093d9c2bf2f83e915c9ba8586261dc96a50c087a50cf9947ffd4b62295b174f89ee765c07a21288d6441e765d06e5981

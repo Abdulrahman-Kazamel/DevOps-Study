@@ -1,0 +1,30 @@
+
+
+```
+
+YPE=Ethernet
+PROXY_METHOD=none
+BROWSER_ONLY=no
+BOOTPROTO=none
+DEFROUTE=yes
+IPV4_FAILURE_FATAL=no
+IPV6INIT=yes
+IPV6_AUTOCONF=yes
+IPV6_DEFROUTE=yes
+IPV6_FAILURE_FATAL=no
+IPV6_ADDR_GEN_MODE=stable-privacy
+NAME=ens33
+UUID=0e9c69ed-f561-4580-8d9e-9f606469f5d7
+DEVICE=ens33
+ONBOOT=yes
+IPADDR=192.168.10.150
+PREFIX=24
+GATEWAY=192.168.10.2
+IPV6_PRIVACY=no
+DNS1=192.168.10.2
+~
+```
+
+
+## network route 
+![[network interface route - eng mahmoud abdelgawad.PNG]]

@@ -1,0 +1,1 @@
+$ sudo openssl req -x509 -nodes -newkey rsa:2048 -keyout node1.example.com.key -out node1.example.com.crt
