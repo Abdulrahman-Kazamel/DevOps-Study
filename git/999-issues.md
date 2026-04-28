@@ -73,4 +73,17 @@ Cause: repo inside repo
 git rm --cached Monitoring/Appd-remote -f
 ```
 
+------------
+#### SSH Agent issue
+
+
+```bash
+ssh-add -l
+# error: no agent
+# Could not open a connection to your authentication agent.
+
+
+eval "$(ssh-agent -s)"  
+ssh-add ~/.ssh/id_rsa
+
 
