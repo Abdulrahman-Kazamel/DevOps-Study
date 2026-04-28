@@ -1,12 +1,6 @@
 
 
 
-
-git pull
-git add .
-git commit -m "almost done with architect"
-git push origin main
-
 (origin/main) ====> the state of remote once the clone done , 
 if any new updates done on the local or on the remote, (origin/main) state not changed
 git fetch && git merge == git pull
