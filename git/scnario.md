@@ -1,0 +1,9 @@
+
+
+here is the task, The xFusionCorp development team added updates to the project that is maintained under /opt/demo.git repo and cloned under /usr/src/kodekloudrepos/demo. Recently some changes were made on Git server that is hosted on Storage server in Stratos DC. The DevOps team added some new Git remotes, so we need to update remote on /usr/src/kodekloudrepos/demo repository as per details mentioned below: a. In /usr/src/kodekloudrepos/demo repo add a new remote dev_demo and point it to /opt/xfusioncorp_demo.git repository. b. There is a file /tmp/index.html on same server; copy this file to the repo and add/commit to master branch. c. Finally push master branch to this new remote origin. and here is my work: cd /usr/src/kodekloudrepos/demo [root@ststor01 demo]# git branch -a * master remotes/origin/master [root@ststor01 demo]# git remote -v origin /opt/demo.git (fetch) origin /opt/demo.git (push) [root@ststor01 demo]# git remote add dev_demo /opt/xfusioncorp_demo.git[root@ststor01 demo]# git remote -vdev_demo /opt/xfusioncorp_demo.git (fetch) dev_demo /opt/xfusioncorp_demo.git (push) origin /opt/demo.git (fetch) origin /opt/demo.git (push) [root@ststor01 demo]# cp /tmp/index.html . [root@ststor01 demo]# git add . [root@ststor01 demo]# git commit -m "adding index.html " [master d1f97f0] adding index.html 1 file changed, 10 insertions(+) create mode 100644 index.html [root@ststor01 demo]# [root@ststor01 demo]# git push dev_demo master Enumerating objects: 6, done. Counting objects: 100% (6/6), done. Delta compression using up to 12 threads Compressing objects: 100% (4/4), done. Writing objects: 100% (6/6), 587 bytes | 587.00 KiB/s, done. Total 6 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0) To /opt/xfusioncorp_demo.git * [new branch] master -> master [root@ststor01 demo]#
+
+
+# Fix origin to new repo  
+git remote set-url origin /opt/xfusioncorp_demo.git  
+  
+git push origin master

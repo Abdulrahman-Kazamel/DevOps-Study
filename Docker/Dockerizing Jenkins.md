@@ -1,5 +1,7 @@
 
 
+
+
 ```bash
 
 FROM ubuntu
@@ -46,3 +48,9 @@ EXPOSE 5000
 #RUN $(which jenkins)
 CMD ["java", "-jar", "/usr/share/java/jenkins.war"]
 ```
+
+
+
+
+
+
