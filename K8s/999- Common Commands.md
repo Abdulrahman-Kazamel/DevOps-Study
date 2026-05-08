@@ -5,11 +5,16 @@ minikube start
 kubectl status
 kubectl get pods
 kubectl get services
+kubectl get svc
 kubectl cluser-info
 kubectl describe serviceName
+kubectl describe pod nginx
 kubectl get ns
 kubectl get deployments
+kubectl get pod nginx -o yaml
 kubectl get nodes -o json | jq '.items[].status.nodeInfo'
+
+kubectl port-forward pod/pod-name 8080:80
 
 
 
