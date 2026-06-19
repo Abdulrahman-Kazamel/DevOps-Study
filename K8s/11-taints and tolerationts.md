@@ -45,3 +45,50 @@ spec:
   restartPolicy: Always
 status: {}
 ```
+
+
+
+
+```
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: nginx-deployment
+  name: nginx-deployment
+  namespace: dev
+
+spec:
+  replicas: 4
+
+  selector:
+    matchLabels:
+      app: nginx-deployment
+
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 1
+      maxSurge: 1
+
+  template:
+    metadata:
+      labels:
+        app: nginx-deployment
+
+    spec:
+      tolerations:
+      - key: "dedicated"
+        operator: "Equal"
+        value: "dev"
+        effect: "NoSchedule"
+
+      containers:
+      - name: nginx
+        image: nginx:1.20
+
+        ports:
+        - containerPort: 80
+
+        resources: {}
+```

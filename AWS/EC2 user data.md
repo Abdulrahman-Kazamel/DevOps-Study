@@ -2,14 +2,14 @@
 ```bash
 #!/bin/bash
 # Update the local package index to ensure the latest versions are available
-apt update -y
+yes|sudo apt update -y
 
 # Install Nginx automatically without manual confirmation
 #apt install nginx -y
-apt install apache2 -y
+yes| sudo apt install apache2 -y
 # Ensure Nginx starts immediately and restarts automatically on boot
-systemctl start apache2
-systemctl enable apache2
+sudo systemctl start apache2
+sudo systemctl enable apache2
 
 ```
 
@@ -84,7 +84,26 @@ yes |  sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plug
 sudo systemctl start docker
 
 
+
 ```
 
+
+```bash
+#!/bin/bash 
+yes | dnf install httpd 
+systemctl enable httpd 
+systemctl start httpd 
+yes | dnf install wget unzip 
+cd /tmp 
+wget -O luminary.zip https://templatemo.com/tm-zip-files-2020/templatemo_621_luminary.zip
+
+mkdir luminary
+unzip luminary.zip  -d luminary/
+mv luminary/* /var/www/html/
+##this should be added like this because each template come with its names 
+mv  /var/www/html/templatemo_621_luminary/* /var/www/html/
+
+systemctl restart httpd
+```
 
 

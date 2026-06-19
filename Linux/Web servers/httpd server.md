@@ -3,7 +3,7 @@
 
 
 ```bash
-#/bin/bash
+#!/bin/bash
 yes | sudo apt update && yes | sudo apt install apache2
 sudo chown -R $USER:$USER /var/www/html
 echo "</h1>Server Details</h1>

@@ -46,3 +46,16 @@ While `git branch` creates branches, it does not switch to them.
 
 - **`git switch -c <name>`**: A modern command that [creates and switches](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell) to a new branch in one step.
 - **`git checkout -b <name>`**: The traditional command to create and switch to a new branch. 
+
+
+
+```bash
+### creating a branch based on a specfic branch
+git branch new-branch-name source-branch
+
+## pushing from another branch
+git push --set-upstream origin features ##features is my branch name
+#or through
+git push -u origin features ## creates the relationship
+
+```

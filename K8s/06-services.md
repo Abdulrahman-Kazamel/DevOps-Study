@@ -30,6 +30,13 @@ Exposes application externally using:
 
 ```
 NodeIP:Port
+
+
+
+
+
+
+
 ```
 
 ## B- LoadBalancer

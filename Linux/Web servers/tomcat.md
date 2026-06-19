@@ -1,4 +1,15 @@
 
+useradd -m /opt/tomcat -s /sbin/nologin tomcat
+useradd --home-dir /opt/tomcat -shell  /sbin/nologin tomcat
+
+wget tomcaturl10
+cp -r downloadedfile content to /opt/tomcat
+
+chown -R tomcat.tomcat /opt/tomcat
+or chown -R tomcat:  /opt/tomcat
+
+
+systemctl daemon-reload
 
 curl --user admin:admin --upload-file /opt/tomcat/webapps/ROOT.war "http://localhost:8080/manager/text/deploy?path=/stapp02"
 
